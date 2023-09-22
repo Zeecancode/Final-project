@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Gqeberha</title>
+
+    <style>
+
+    body {
+        background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+        font-weight: lighter;
+        font-size: 16px;
+      
+    }
+
+    h1 {
+        color: #885DF1;
+        text-align: center;
+        font-size: 60px;
+        margin: auto;
+        
+    }
+
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        border: 2px solid #885df1;
+        border-radius: 60px;
+        background: transparent;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        width: 400px;
+      
+    }
+
+    button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #1a64d6;
+        background: #885DF1;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 12px 18px;
+        border-radius: 20px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        color: #885DF1;
+        background: #ffffff;
+        border: 1px solid #1a64d6;
+      }
+    
+      .footer-img {
+        display: block;
+        margin: 0 auto ;
+        width: 40px;
+        border-radius: 30px;
+    }
+
+    .footer {
+        text-align: center;
+        
+    }
+
+    .city {
+      color: #885DF1;
+      font-weight: bold;
+    }
+
+    .container {
+  
+    margin: auto;
+    padding: 18px 30px;
+   
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+    <h1>Welcome to Gqeberha!</h1>
+
+    <h2>
+      <img
+        src="https://www.getaway.co.za/wp-content/uploads/2023/05/GettyImages-1206375421-719x431.jpg"
+        alt="Port Elizabeth"
+        width="400"
+      />
+    </h2>
+
+    <p>
+      Formerly known as Port Elizabeth and often referred to as P.E,
+      <span class="city">
+        Gqeberha
+      </span> is a major seaport and the most popular city in
+      the Eastern Cape province of South Africa. It is the seat of the Nelson
+      Mandela Bay Metropolitan Municipality, South Africa's second-smallest
+      metropolitan municipality by area. It is the sixth-most popular city in
+      South Africa and is the cultural, economic and financial hub of the
+      Eastern Cape. The name 
+      <span class="city">
+      Gqeberha </span> is a Xhosa word occasionally used
+      to refer to the Baakens river, which flows through the city. This is now
+      the official name of the city since 23 February 2021.
+
+      <div>
+
+      
+      Now, enough with the boring information.. 😒😒 let's look
+      at some fun facts:
+      </div>
+
+     <ul>
+
+        <li>This is my hometown, I was born and raised here.</li>
+        <li> I speak IsiXhosa and most of the population here speaks Xhosa, one of the official languages in South Africa.</li>
+        <li>
+          <span class="city">
+            Gqeberha
+          </span> is home to some of the most beautfiul beaches in South Africa, with warm ocean water. 
+         <a href="https://www.tripadvisor.co.za/Attractions-g312559-Activities-c61-t52-Port_Elizabeth_Eastern_Cape.html" alt="List of beaches" target="_blank"> 
+          List of Beaches
+          </a>
+         </li>
+        <li> We have a beautiful mall right at the beachfront called 
+            
+            <a href="https://prive.suninternational.com/boardwalk/activities/mall/" alt="mall" target="_blank"> The Boarwalk Mall
+            </a> so pop in for a visit if you ever come to 
+            <span class="city">
+              Port Elizabeth/Gqeberha
+            </span>.
+            </li>
+
+        <li>Here are some fun things to do in <a href="https://www.getaway.co.za/travel/travel-ideas/things-to-do-in-and-around-gqeberha/" alt="things to do in Gqeberha" target="_blank"> 
+          <span class="city">
+            Gqeberha.
+        </span>
+        </a>
+        </li>
+     </ul>
+    </p>
+
+     <a
+        href="https://bunac.org/blog/other/5-things-you-probably-didnt-know-about-port-elizabeth-south-africa"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more fun facts here 😊
+      </a>
+        <br/>
+      <button> About You</button>
+
+      <hr>
+
+       <p class="footer">
+        Made by
+         <em> Zinzi Mayiyana </em> 🖤
+       <br/>
+
+      Let's connect <a href="https://www.linkedin.com/in/zinzi-mayiyana-a461a4139/" target="_blank" > here</a> 
+       </p>
+      <img
+      class="footer-img"
+      src="https://media.licdn.com/dms/image/D4E03AQH_i0Gb0lWJKg/profile-displayphoto-shrink_800_800/0/1692978517893?e=1698278400&v=beta&t=GSID_RIHr2ujFhvegKx1e7BIcluoy5sl1ZQIwKB8yfs"
+      alt="My picture"
+    />
+        </div>
+    <script>
+
+        function aboutUser() {
+        let name = prompt("What is your name?");
+        let city = prompt("Which city do you come from?");
+
+        let heading = document.querySelector("h1");
+
+      alert("Hello" + " " + name + " " + ", Nice to meet you! 🤗" + " " + "Let me know if you ever visit Gqeberha!");
+
+      }
+
+      let cityButton = document.querySelector("button");
+
+      cityButton.addEventListener("click", aboutUser);
+    </script>
+  </body>
+</html>
